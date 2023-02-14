@@ -9,10 +9,11 @@ karpenter:
       clusterEndpoint:
       defaultInstanceProfile:
       interruptionQueueName:
-  resources:
-    limits:
-      cpu: 1
-      memory: 1Gi
-    requests:
-      cpu: 100m
-      memory: 150Mi
+  controller:
+    resources:
+      limits:
+        cpu: 1
+        memory: 1Gi
+      requests:
+        cpu: 100m
+        memory: 150Mi
