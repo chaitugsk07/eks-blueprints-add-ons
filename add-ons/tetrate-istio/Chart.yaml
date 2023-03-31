@@ -24,6 +24,3 @@ dependencies:
   - name: istiod
     version: 1.17.1
     repository: https://istio-release.storage.googleapis.com/charts
-  - name: istio-ingressgateway
-    version: 1.17.1
-    repository: https://istio-release.storage.googleapis.com/charts
