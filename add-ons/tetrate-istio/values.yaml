@@ -9,3 +9,5 @@ cni: {}
 istiod:
   istio_cni:
     enabled: true
+
+istio-ingressgateway: {}
