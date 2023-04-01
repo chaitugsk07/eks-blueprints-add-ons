@@ -4,7 +4,11 @@ global:
 
 base: {}
 
-cni: {}
+cni:
+  resources:
+    requests:
+      cpu: 100m
+      memory: 100Mi
 
 istiod:
   istio_cni:
