@@ -1,3 +1,9 @@
 aws-load-balancer-controller:
   serviceAccount:
     create: false
+  nodeSelector:
+    type: karpenter
+  tolerations:
+    - effect: NoSchedule
+      key: lt-1d-expiry
+      value: "true"

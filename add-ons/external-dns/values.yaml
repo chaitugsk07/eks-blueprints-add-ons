@@ -3,3 +3,9 @@ external-dns:
     create: false
     name: "external-dns-sa"
   provider: "aws"
+  nodeSelector:
+    type: karpenter
+  tolerations:
+    - effect: NoSchedule
+      key: lt-1d-expiry
+      value: "true"
