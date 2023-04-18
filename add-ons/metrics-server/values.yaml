@@ -3,9 +3,3 @@ metrics-server:
   podDisruptionBudget:
     enabled: true
     maxUnavailable: 1
-  nodeSelector:
-    type: karpenter
-  tolerations:
-    - effect: NoSchedule
-      key: lt-1d-expiry
-      value: "true"

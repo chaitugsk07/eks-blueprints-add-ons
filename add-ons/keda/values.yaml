@@ -10,8 +10,4 @@ resources:
     memory: 100Mi
 
 nodeSelector:
-  type: karpenter
-tolerations:
-  - effect: NoSchedule
-    key: lt-1d-expiry
-    value: "true"
+  kubernetes.io/os: linux
